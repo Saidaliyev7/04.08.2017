@@ -1,0 +1,53 @@
+.container{
+    width: 970px;
+    height: 600px;
+    margin: 0px auto;
+}
+
+.body{
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+.cloud{
+    width: 20%;
+    position: absolute;
+    margin: 50px;
+}
+.raindrop,.raindrop1,.raindrop2,.raindrop3{
+    top: 32%;
+    width: 3%;
+    position: absolute;
+    margin: 10px;
+    animation: rain_drop  infinite ease;  
+}
+.raindrop{
+    left: 11%;
+    animation-duration: 1s;
+}
+.raindrop1{
+    left: 15%;
+    animation-duration: 0.5s;
+}
+.raindrop2{
+    left: 19%;
+    animation-duration: 1.5s;
+}
+.raindrop3{
+    left: 23%;
+    animation-duration: 1.25s;
+}
+@keyframes rain_drop {
+    0%{
+      top: 32%;  
+    }
+    25%{
+      top: 46%  
+    }
+    75%{
+      top: 60%   
+    }
+    100%{
+        top: 74% 
+    }
+}
